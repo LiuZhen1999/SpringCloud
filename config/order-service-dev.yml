@@ -21,8 +21,5 @@ management:
     web:
       exposure:
         include: hystrix.stream
-spring:
-  cloud:
-    config:
-      override-none: true
+
 
