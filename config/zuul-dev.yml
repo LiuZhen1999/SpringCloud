@@ -3,15 +3,18 @@ spring:
     name: zuul
   cloud:
     config:
-      override-none: true    
-server:
-  port: 3001
-  
+      override-none: true 
   rabbitmq:
-    host: 192.168.64.140
+    host: www.wht6.cn
     port: 5672
     username: admin
     password: admin
+  zipkin:
+    sender:
+      type: rabbit
+
+server:
+  port: 3001
   
 eureka:
   client:
