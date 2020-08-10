@@ -5,7 +5,13 @@ spring:
     config:
       override-none: true
 server:
-  port: 8201  
+  port: 8201
+  
+  rabbitmq:
+    host: www.wht6.cn
+    port: 5672
+    username: admin
+    password: admin  
   
 eureka:
   client:
